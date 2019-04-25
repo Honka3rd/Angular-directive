@@ -1,0 +1,10 @@
+<button 
+  class='Primary btn'
+  (click)='loadCourses()'>load data
+</button>
+
+<ul>
+  <li *ngFor='let c of courses; trackBy: trackCourse'>
+    {{ c.name }}
+  </li>
+</ul>
